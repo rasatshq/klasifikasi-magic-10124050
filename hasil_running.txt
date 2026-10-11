@@ -1,0 +1,88 @@
+INFO KOLOM SEBELUM PEMROSESAN
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 11 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   fLength   1000 non-null   float64
+ 1   fWidth    1000 non-null   float64
+ 2   fSize     1000 non-null   float64
+ 3   fConc     1000 non-null   float64
+ 4   fConc1    1000 non-null   float64
+ 5   fAsym     1000 non-null   float64
+ 6   fM3Long   1000 non-null   float64
+ 7   fM3Trans  1000 non-null   float64
+ 8   fAlpha    1000 non-null   float64
+ 9   fDist     1000 non-null   float64
+ 10  class     1000 non-null   object 
+dtypes: float64(10), object(1)
+memory usage: 86.1+ KB
+
+TIPE KOLOM DAN MISSING VALUES
+    kolom tipe_awal tipe_hasil  nilai_kosong peran
+ fLength   float64    float64             0 fitur
+  fWidth   float64    float64             0 fitur
+   fSize   float64    float64             0 fitur
+   fConc   float64    float64             0 fitur
+  fConc1   float64    float64             0 fitur
+   fAsym   float64    float64             0 fitur
+ fM3Long   float64    float64             0 fitur
+fM3Trans   float64    float64             0 fitur
+  fAlpha   float64    float64             0 fitur
+   fDist   float64    float64             0 fitur
+   class    object     string             0 label
+
+KATEGORI AWAL: ['g', 'h']
+KATEGORI HASIL: ['g', 'h']
+Koreksi ejaan/kapitalisasi/spasi: 0
+MAGIC GAMMA TELESCOPE - 1.000 BARIS DAN 10 FITUR
+ID dan label tidak dihitung sebagai fitur.
+Jumlah awal dan setelah pemrosesan: 1000 1000
+Nilai kosong: 0 Duplikat: 0
+Distribusi kelas: {'g': 652, 'h': 348}
+Data latih: 800 Data uji: 200
+Kandidat pencilan latih: 116
+
+STATISTIK DARI DATA LATIH
+    fitur  median_latih  mean_latih  std_latih  batas_bawah_iqr  batas_atas_iqr
+ fLength      37.25925   53.234668  42.228990       -46.800087      142.193013
+  fWidth      17.60670   22.887912  18.512875        -7.708462       44.948837
+   fSize       2.74970    2.850932   0.488866         1.476900        4.163700
+   fConc       0.34160    0.371697   0.180255        -0.174613        0.903687
+  fConc1       0.19280    0.210367   0.109863        -0.106012        0.509687
+   fAsym       2.61315   -7.560504  59.671437       -90.354163       89.821538
+ fM3Long      14.68020   12.606815  49.682264       -87.412337      111.608362
+fM3Trans       0.00010    0.723556  21.334237       -43.228850       43.599550
+  fAlpha      19.42435   28.888022  26.642974       -60.219888      114.184813
+   fDist     192.58200  194.608912  76.503403        -8.365750      393.048250
+
+5 TERATAS HASIL PEMROSESAN
+  row_id  fLength_z  fWidth_z   fSize_z   fConc_z  fConc1_z   fAsym_z  fM3Long_z  fM3Trans_z  fAlpha_z   fDist_z class split
+      0   1.018211  1.276333  2.665490 -1.629895 -1.559824  1.976080   1.458102    1.990268 -0.902077  0.700846     g latih
+      1  -0.201171 -0.391701 -0.435562 -0.338394 -0.353774  0.362041   0.495504    0.548168 -0.962243  0.355502     g   uji
+      2  -0.581917 -0.203405  0.020391 -0.174738 -0.190844 -0.046317  -0.720406    0.503404 -0.305169  0.058169     g latih
+      3  -0.953389 -0.647231 -1.531772  2.060425  2.366892  0.357141  -0.379415   -0.343151  0.501174 -0.344611     g latih
+      4  -0.720836 -0.433229 -0.580796  0.824401  0.761253 -0.019902  -0.663925    0.564419 -0.829657 -1.102577     g   uji
+
+5 TERBAWAH HASIL PEMROSESAN
+  row_id  fLength_z  fWidth_z   fSize_z   fConc_z  fConc1_z  fAsym_z  fM3Long_z  fM3Trans_z  fAlpha_z   fDist_z class split
+    995   1.213416  0.567329  0.406795 -1.142254 -1.074673 1.628064   1.643520    1.232622  1.883494 -0.199480     h latih
+    996  -0.160079  0.181408  0.119395  0.439946  0.703909 0.647694   0.677916   -0.907347  0.882487 -0.534184     h latih
+    997  -0.729609 -0.913932 -1.125322  2.042118  3.006781 0.110142  -0.112821    0.589088 -0.438713  0.677354     h latih
+    998  -0.685805 -0.682418 -0.853264  1.105114  1.353810 0.186962   0.162299    0.381131  2.097025  0.425485     h latih
+    999  -0.499182 -0.558904 -0.187437  0.332876  0.057648 0.656639   0.240965   -0.487932  0.236309 -0.026429     h latih
+
+Akurasi latih: 87.0000%
+Akurasi uji: 85.5000%
+ROC AUC gamma: 0.936923
+Confusion matrix (urutan g, h):
+ [[112, 18], [11, 59]]
+              precision    recall  f1-score   support
+
+       gamma     0.9106    0.8615    0.8854       130
+      hadron     0.7662    0.8429    0.8027        70
+
+    accuracy                         0.8550       200
+   macro avg     0.8384    0.8522    0.8440       200
+weighted avg     0.8601    0.8550    0.8564       200
+

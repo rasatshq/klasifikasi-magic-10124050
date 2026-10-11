@@ -1,0 +1,78 @@
+{
+  "rows": 1000,
+  "feature_count": 10,
+  "output_features": [
+    "fLength_z",
+    "fWidth_z",
+    "fSize_z",
+    "fConc_z",
+    "fConc1_z",
+    "fAsym_z",
+    "fM3Long_z",
+    "fM3Trans_z",
+    "fAlpha_z",
+    "fDist_z"
+  ],
+  "missing": 0,
+  "duplicates": 0,
+  "label_corrections": 0,
+  "class_counts": {
+    "g": 652,
+    "h": 348
+  },
+  "train_counts": {
+    "g": 522,
+    "h": 278
+  },
+  "test_counts": {
+    "g": 130,
+    "h": 70
+  },
+  "train_rows": 800,
+  "test_rows": 200,
+  "outlier_rows_train": 116,
+  "train_accuracy": 0.87,
+  "test_accuracy": 0.855,
+  "roc_auc_gamma": 0.9369230769230771,
+  "classification_report": {
+    "gamma": {
+      "precision": 0.9105691056910569,
+      "recall": 0.8615384615384616,
+      "f1-score": 0.8853754940711462,
+      "support": 130.0
+    },
+    "hadron": {
+      "precision": 0.7662337662337663,
+      "recall": 0.8428571428571429,
+      "f1-score": 0.8027210884353742,
+      "support": 70.0
+    },
+    "accuracy": 0.855,
+    "macro avg": {
+      "precision": 0.8384014359624116,
+      "recall": 0.8521978021978023,
+      "f1-score": 0.8440482912532602,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 0.8600517368810051,
+      "recall": 0.855,
+      "f1-score": 0.856446452098626,
+      "support": 200.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      112,
+      18
+    ],
+    [
+      11,
+      59
+    ]
+  ],
+  "python": "3.12.7",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "sklearn": "1.8.0"
+}

@@ -1,0 +1,12 @@
+kolom,tipe_awal,tipe_hasil,nilai_kosong,peran
+fLength,float64,float64,0,fitur
+fWidth,float64,float64,0,fitur
+fSize,float64,float64,0,fitur
+fConc,float64,float64,0,fitur
+fConc1,float64,float64,0,fitur
+fAsym,float64,float64,0,fitur
+fM3Long,float64,float64,0,fitur
+fM3Trans,float64,float64,0,fitur
+fAlpha,float64,float64,0,fitur
+fDist,float64,float64,0,fitur
+class,object,string,0,label
