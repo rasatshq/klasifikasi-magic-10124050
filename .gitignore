@@ -1,6 +1,7 @@
-# Dokumen Word (sesuai instruksi tidak di-push)
+# Dokumen laporan (Word & PDF - sesuai instruksi tidak di-push)
 *.docx
 ~$*.docx
+*.pdf
 
 # Python cache & environment
 __pycache__/
