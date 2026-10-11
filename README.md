@@ -80,12 +80,9 @@ py klasifikasi_svm_1000.py > hasil_running.txt
 
 ## Link data dan program untuk pengumpulan
 
-Link data sumber UCI sudah tercantum di atas dan pada laporan.
-Program disertakan di dalam ZIP. Untuk menyediakan link yang dapat dibuka
-dosen, unggah ZIP ini ke Google Drive milikmu atau unggah kode dan dataset
-ke repositori GitHub. Salin tautan berbagi yang sesuai, pastikan dosen
-mempunyai akses, lalu tempel bersama link UCI pada pengumpulan LMS.
-Jangan memakai path folder lokal atau tautan unduhan percakapan sebagai
-pengganti tautan pengumpulan yang dapat diakses dosen.
+- **Dataset Sumber (UCI)**: https://archive.ics.uci.edu/dataset/159/magic+gamma+telescope
+- **Repositori GitHub Program & Data**: https://github.com/rasatshq/klasifikasi-magic-10124050
+
+Seluruh kode program, dataset hasil prapemrosesan, dan berkas analisis telah di-push ke repositori GitHub di atas. Tautan repositori GitHub ini dapat langsung digunakan dan diserahkan bersama tautan sumber UCI untuk pengumpulan pada LMS.
 
 Tidak diperlukan penambahan data buatan, kolom ID, atau fitur baru.
