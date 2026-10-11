@@ -21,31 +21,73 @@ Data sumber berasal dari simulasi Monte Carlo oleh penyedia dataset.
 Sampel 1.000 baris dipilih tanpa penggandaan sesudah deduplikasi sumber,
 dengan stratifikasi kelas dan random_state=42.
 
-## Menjalankan di Windows dan VS Code
+## Cara Clone dan Menjalankan Program
 
-1. Extract All paket ZIP.
-2. Buka folder yang berisi klasifikasi_svm_1000.py melalui Open Folder.
-3. Pilih Terminal > New Terminal.
-4. Pasang pustaka:
+### 1. Clone Repositori dari GitHub
+
+Buka terminal (Git Bash, Command Prompt, atau PowerShell) lalu jalankan perintah berikut:
+
+```bash
+git clone https://github.com/rasatshq/klasifikasi-magic-10124050.git
+cd klasifikasi-magic-10124050
+```
+
+*(Atau jika menggunakan berkas ZIP, ekstrak paket ZIP dan buka foldernya di VS Code melalui menu **File > Open Folder**).*
+
+### 2. (Opsional) Buat dan Aktifkan Virtual Environment
+
+Disarankan membuat lingkungan virtual Python agar dependensi terisolasi:
+
+- **Windows (PowerShell):**
+  ```powershell
+  python -m venv .venv
+  .venv\Scripts\Activate.ps1
+  ```
+- **Linux / macOS:**
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
+
+### 3. Pasang Pustaka / Dependensi
+
+Pastikan pustaka pendukung terpasang dari `requirements.txt`:
 
 ```powershell
+pip install -r requirements.txt
+# atau di Windows jika menggunakan python launcher:
 py -m pip install -r requirements.txt
 ```
 
-5. Jalankan program:
+### 4. Jalankan Program
+
+Jalankan skrip klasifikasi SVM utama:
 
 ```powershell
+python klasifikasi_svm_1000.py
+# atau:
 py klasifikasi_svm_1000.py
 ```
 
-Jika py tidak dikenali, gunakan python sebagai penggantinya. Jika keduanya
-tidak tersedia, pasang Python dahulu. Paket pustaka diverifikasi dengan
-Python 3.12.14. Program membaca CSV lokal, bukan mengunduh ulang dataset.
-
-Untuk menyimpan keluaran terminal:
+Untuk menyimpan seluruh keluaran terminal langsung ke dalam berkas teks:
 
 ```powershell
-py klasifikasi_svm_1000.py > hasil_running.txt
+python klasifikasi_svm_1000.py > hasil_running.txt
+```
+
+> **Catatan:**
+> - Jika perintah `py` tidak dikenali, gunakan `python` (atau sebaliknya).
+> - Paket pustaka telah diverifikasi berjalan dengan Python 3.12.x.
+> - Program membaca berkas CSV lokal (`dataset_magic_1000.csv`) yang telah disediakan di repositori, sehingga tidak memerlukan koneksi internet untuk mengunduh ulang dataset saat dijalankan.
+
+### 5. Melakukan Push Kembali ke GitHub (Jika Ada Perubahan)
+
+Jika Anda melakukan modifikasi atau pembaruan berkas dan ingin menyimpannya kembali ke repositori GitHub:
+
+```bash
+git add .
+git commit -m "Deskripsi perubahan yang dilakukan"
+git push origin main
 ```
 
 ## Urutan demo saat perkuliahan
